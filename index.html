@@ -4,44 +4,50 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>franco-portfolio</title>
+    <title>Franco Iniego | Web Developer Portfolio</title>
   </head>
+
   <body class="bg-slate-950 text-white">
-    <!-- Navbar -->
+    <!-- ======================================================
+                            Navbar Section
+        ======================================================= -->
+
     <header
-      class="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur"
+      class="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-slate-950/80 backdrop-blur"
     >
       <nav
-        class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between"
+        class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4"
       >
-        <a href="#" class="text-xl font-bold tracking-tight">
+        <a href="#home" class="text-xl font-bold tracking-tight">
           Franco<span class="text-blue-500">.dev</span>
         </a>
 
-        <div class="hidden md:flex items-center gap-8 text-sm text-slate-300">
-          <a href="#" class="hover:text-white transition">Home </a>
-          <a href="#" class="hover:text-white transition">About</a>
-          <a href="#" class="hover:text-white transition">Skills</a>
-          <a href="#" class="hover:text-white transition">Projects</a>
-          <a href="#" class="hover:text-white transition">Contact</a>
+        <div class="hidden items-center gap-8 text-sm text-slate-300 md:flex">
+          <a href="#home" class="transition hover:text-white">Home</a>
+          <a href="#about" class="transition hover:text-white">About</a>
+          <a href="#skills" class="transition hover:text-white">Skills</a>
+          <a href="#projects" class="transition hover:text-white">Projects</a>
+          <a href="#services" class="transition hover:text-white">Services</a>
+          <a href="#contact" class="transition hover:text-white">Contact</a>
         </div>
 
         <a
-          href="#"
-          class="hidden md:inline-flex rounded-xl bg-blue-600 px-5 py-2 text-sm font-medium hover:bg-blue-700 transition"
+          href="#contact"
+          class="hidden rounded-xl bg-blue-600 px-5 py-2 text-sm font-medium transition hover:bg-blue-700 md:inline-flex"
         >
           Hire Me
         </a>
       </nav>
     </header>
 
-    <!-- ======================================================
-                    Hero Section
-======================================================= -->
+    <!-- End Navbar Section -->
 
-    <section class="min-h-screen flex items-center px-6 pt-24">
-      <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-        <!-- Left Content -->
+    <!-- ======================================================
+                            Hero Section
+        ======================================================= -->
+
+    <section id="home" class="flex min-h-screen items-center px-6 pt-24">
+      <div class="mx-auto grid max-w-6xl items-center gap-16 lg:grid-cols-2">
         <div>
           <p
             class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400"
@@ -49,13 +55,13 @@
             Web Developer Portfolio
           </p>
 
-          <h1 class="mt-4 text-5xl md:text-7xl font-bold leading-tight">
+          <h1 class="mt-4 text-5xl font-bold leading-tight md:text-7xl">
             Hi, I'm
             <br />
-            <span class="text-blue-500 inline-block"> Franco Iniego </span>
+            <span class="inline-block text-blue-500">Franco Iniego</span>
           </h1>
 
-          <p class="mt-8 text-xl text-slate-400 leading-relaxed">
+          <p class="mt-8 text-xl leading-relaxed text-slate-400">
             I build modern and AI-powered web systems using PHP, MySQL, Tailwind
             CSS, and JavaScript.
           </p>
@@ -63,33 +69,30 @@
           <div class="mt-10 flex flex-wrap gap-4">
             <a
               href="#projects"
-              class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-2xl transition font-medium"
+              class="rounded-2xl bg-blue-600 px-8 py-4 font-medium transition hover:bg-blue-700"
             >
               View Projects
             </a>
 
             <a
               href="#contact"
-              class="border border-white/10 hover:bg-white/10 px-8 py-4 rounded-2xl transition"
+              class="rounded-2xl border border-white/10 px-8 py-4 transition hover:bg-white/10"
             >
               Contact Me
             </a>
           </div>
         </div>
 
-        <!-- Right Image -->
         <div class="flex justify-center">
           <div class="relative">
-            <!-- Blue Glow -->
             <div
-              class="absolute inset-0 bg-blue-600 blur-3xl opacity-30 rounded-full"
+              class="absolute inset-0 rounded-full bg-blue-600 opacity-30 blur-3xl"
             ></div>
 
-            <!-- Profile Image -->
             <img
               src="/src/assets/profile.jpg"
-              alt="Profile"
-              class="relative w-80 h-80 md:w-96 md:h-96 object-cover rounded-full border-4 border-white/10 shadow-2xl"
+              alt="Franco Iniego profile photo"
+              class="relative h-80 w-80 rounded-full border-4 border-white/10 object-cover shadow-2xl md:h-96 md:w-96"
             />
           </div>
         </div>
@@ -98,9 +101,12 @@
 
     <!-- End Hero Section -->
 
-    <!-- About Section -->
-    <section id="about" class="py-24 px-6 border-t border-white/10">
-      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <!-- ======================================================
+                            About Section
+        ======================================================= -->
+
+    <section id="about" class="border-t border-white/10 px-6 py-24">
+      <div class="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
         <div class="rounded-3xl border border-white/10 bg-white/5 p-8">
           <p
             class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400"
@@ -108,69 +114,73 @@
             About Me
           </p>
 
-          <h2 class="mt-4 text-3xl md:text-5xl font-bold tracking-tight">
+          <h2 class="mt-4 text-3xl font-bold tracking-tight md:text-5xl">
             I create clean and useful web systems.
           </h2>
 
-          <p class="mt-6 text-slate-400 leading-relaxed">
+          <p class="mt-6 leading-relaxed text-slate-400">
             I am a PHP, MySQL, Tailwind CSS, and JavaScript developer focused on
             building professional websites and practical systems for businesses,
             offices, and LGU-style workflows.
           </p>
 
-          <p class="mt-4 text-slate-400 leading-relaxed">
+          <p class="mt-4 leading-relaxed text-slate-400">
             My goal is to create web solutions that are simple to use, secure,
             responsive, and ready for real-world deployment.
           </p>
 
           <div class="mt-8 flex flex-wrap gap-3">
             <span
-              class="rounded-full bg-blue-500/10 px-4 py-2 text-sm text-blue-300 border border-blue-500/20"
+              class="rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm text-blue-300"
               >PHP</span
             >
             <span
-              class="rounded-full bg-blue-500/10 px-4 py-2 text-sm text-blue-300 border border-blue-500/20"
+              class="rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm text-blue-300"
               >MySQL</span
             >
             <span
-              class="rounded-full bg-blue-500/10 px-4 py-2 text-sm text-blue-300 border border-blue-500/20"
+              class="rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm text-blue-300"
               >Tailwind CSS</span
             >
             <span
-              class="rounded-full bg-blue-500/10 px-4 py-2 text-sm text-blue-300 border border-blue-500/20"
+              class="rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm text-blue-300"
               >JavaScript</span
             >
           </div>
         </div>
 
         <div class="grid grid-cols-2 gap-4">
-          <div class="rounded-3xl bg-white/5 border border-white/10 p-6">
-            <h3 class="text-4xl font-bold text-white">3+</h3>
-            <p class="mt-2 text-sm text-slate-400">Major Projects</p>
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 class="text-4xl font-bold text-white">5+</h3>
+            <p class="mt-2 text-sm text-slate-400">Project Concepts</p>
           </div>
 
-          <div class="rounded-3xl bg-white/5 border border-white/10 p-6">
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
             <h3 class="text-4xl font-bold text-white">LGU</h3>
             <p class="mt-2 text-sm text-slate-400">System Focus</p>
           </div>
 
-          <div class="rounded-3xl bg-white/5 border border-white/10 p-6">
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
             <h3 class="text-4xl font-bold text-white">100%</h3>
             <p class="mt-2 text-sm text-slate-400">Responsive UI</p>
           </div>
 
-          <div class="rounded-3xl bg-white/5 border border-white/10 p-6">
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
             <h3 class="text-4xl font-bold text-white">Git</h3>
             <p class="mt-2 text-sm text-slate-400">Version Control</p>
           </div>
         </div>
       </div>
     </section>
-    <!-- End of About Section -->
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-24 px-6 border-t border-white/10">
-      <div class="max-w-6xl mx-auto">
+    <!-- End About Section -->
+
+    <!-- ======================================================
+                            Skills Section
+        ======================================================= -->
+
+    <section id="skills" class="border-t border-white/10 px-6 py-24">
+      <div class="mx-auto max-w-6xl">
         <div class="max-w-2xl">
           <p
             class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400"
@@ -178,52 +188,52 @@
             Skills
           </p>
 
-          <h2 class="mt-4 text-3xl md:text-5xl font-bold tracking-tight">
+          <h2 class="mt-4 text-3xl font-bold tracking-tight md:text-5xl">
             Technologies I use to build systems.
           </h2>
 
-          <p class="mt-6 text-slate-400 leading-relaxed">
+          <p class="mt-6 leading-relaxed text-slate-400">
             These are the tools and technologies I use for building clean,
             responsive, and database-driven web applications.
           </p>
         </div>
 
-        <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition"
+            class="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
           >
             <h3 class="text-xl font-bold">PHP</h3>
-            <p class="mt-3 text-sm text-slate-400 leading-relaxed">
+            <p class="mt-3 text-sm leading-relaxed text-slate-400">
               Backend logic, MVC structure, authentication, and secure web
               systems.
             </p>
           </div>
 
           <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition"
+            class="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
           >
             <h3 class="text-xl font-bold">MySQL</h3>
-            <p class="mt-3 text-sm text-slate-400 leading-relaxed">
+            <p class="mt-3 text-sm leading-relaxed text-slate-400">
               Database design, CRUD operations, relationships, and reporting
               data.
             </p>
           </div>
 
           <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition"
+            class="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
           >
             <h3 class="text-xl font-bold">Tailwind CSS</h3>
-            <p class="mt-3 text-sm text-slate-400 leading-relaxed">
+            <p class="mt-3 text-sm leading-relaxed text-slate-400">
               Responsive layouts, clean UI components, spacing, colors, and
               modern design.
             </p>
           </div>
 
           <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-6 hover:bg-white/10 transition"
+            class="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
           >
             <h3 class="text-xl font-bold">JavaScript</h3>
-            <p class="mt-3 text-sm text-slate-400 leading-relaxed">
+            <p class="mt-3 text-sm leading-relaxed text-slate-400">
               Interactivity, menus, form behavior, UI effects, and frontend
               logic.
             </p>
@@ -231,15 +241,114 @@
         </div>
       </div>
     </section>
-    <!--End of Skills Section -->
+
+    <!-- End Skills Section -->
 
     <!-- ======================================================
-                    Services Section
-======================================================= -->
+                            Projects Section
+        ======================================================= -->
 
-    <section id="services" class="py-24 px-6 border-t border-white/10">
-      <div class="max-w-6xl mx-auto">
-        <!-- Heading -->
+    <section id="projects" class="border-t border-white/10 px-6 py-24">
+      <div class="mx-auto max-w-6xl">
+        <div class="max-w-2xl">
+          <p
+            class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400"
+          >
+            Featured Projects
+          </p>
+
+          <h2 class="mt-4 text-3xl font-bold tracking-tight md:text-5xl">
+            AI-Powered Web Systems
+          </h2>
+
+          <p class="mt-6 leading-relaxed text-slate-400">
+            A collection of modern system concepts and web applications focused
+            on automation, productivity, and digital transformation.
+          </p>
+        </div>
+
+        <div class="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <p class="text-sm font-medium text-blue-400">LGU System</p>
+            <h3 class="mt-4 text-2xl font-bold">eDokumento</h3>
+            <p class="mt-2 font-medium text-blue-300">
+              AI-Powered Document Tracking System
+            </p>
+            <p class="mt-4 leading-relaxed text-slate-400">
+              Streamlining document routing, approvals, and monitoring for
+              organizations and local government units.
+            </p>
+          </div>
+
+          <div
+            class="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <p class="text-sm font-medium text-blue-400">Legislative System</p>
+            <h3 class="mt-4 text-2xl font-bold">eLegislative</h3>
+            <p class="mt-2 font-medium text-blue-300">
+              AI-Powered Legislative Management System
+            </p>
+            <p class="mt-4 leading-relaxed text-slate-400">
+              Managing ordinances, resolutions, committee records, and
+              legislative workflows with intelligent assistance.
+            </p>
+          </div>
+
+          <div
+            class="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <p class="text-sm font-medium text-blue-400">Permit System</p>
+            <h3 class="mt-4 text-2xl font-bold">eBPLS</h3>
+            <p class="mt-2 font-medium text-blue-300">
+              AI-Powered Business Permit and Licensing System
+            </p>
+            <p class="mt-4 leading-relaxed text-slate-400">
+              Simplifying permit applications, assessments, approvals, and
+              renewals for local government units.
+            </p>
+          </div>
+
+          <div
+            class="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <p class="text-sm font-medium text-blue-400">Business Website</p>
+            <h3 class="mt-4 text-2xl font-bold">Dynamic Website</h3>
+            <p class="mt-2 font-medium text-blue-300">
+              AI-Powered Business Website Platform
+            </p>
+            <p class="mt-4 leading-relaxed text-slate-400">
+              Creating responsive and modern websites with intelligent content
+              and interactive user experiences.
+            </p>
+          </div>
+
+          <div
+            class="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <p class="text-sm font-medium text-blue-400">Retail System</p>
+            <h3 class="mt-4 text-2xl font-bold">POS Pro</h3>
+            <p class="mt-2 font-medium text-blue-300">
+              AI-Powered Point of Sale and Inventory System
+            </p>
+            <p class="mt-4 leading-relaxed text-slate-400">
+              Managing sales, inventory, receipts, and reports through a smart
+              and efficient retail platform.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Projects Section -->
+
+    <!-- ======================================================
+                            Services Section
+        ======================================================= -->
+
+    <section id="services" class="border-t border-white/10 px-6 py-24">
+      <div class="mx-auto max-w-6xl">
         <div class="max-w-2xl">
           <p
             class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400"
@@ -247,124 +356,112 @@
             Services
           </p>
 
-          <h2 class="mt-4 text-3xl md:text-5xl font-bold tracking-tight">
+          <h2 class="mt-4 text-3xl font-bold tracking-tight md:text-5xl">
             Solutions I Can Build
           </h2>
 
-          <p class="mt-6 text-slate-400 leading-relaxed">
+          <p class="mt-6 leading-relaxed text-slate-400">
             I develop modern, responsive, and database-driven web applications
             tailored for businesses and organizations.
           </p>
         </div>
 
-        <!-- Service Cards -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
-          <!-- Service 1 -->
+        <div class="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-8 hover:bg-white/10 transition"
+            class="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 class="text-2xl font-bold">Custom Web Systems</h3>
-
-            <p class="mt-4 text-slate-400 leading-relaxed">
+            <p class="mt-4 leading-relaxed text-slate-400">
               Design and development of tailored web applications using PHP,
               MySQL, Tailwind CSS, and JavaScript.
             </p>
           </div>
 
-          <!-- Service 2 -->
           <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-8 hover:bg-white/10 transition"
+            class="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 class="text-2xl font-bold">LGU Digital Solutions</h3>
-
-            <p class="mt-4 text-slate-400 leading-relaxed">
+            <p class="mt-4 leading-relaxed text-slate-400">
               Development of systems for document tracking, permits, legislative
               management, and office workflows.
             </p>
           </div>
 
-          <!-- Service 3 -->
           <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-8 hover:bg-white/10 transition"
+            class="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 class="text-2xl font-bold">Business Websites</h3>
-
-            <p class="mt-4 text-slate-400 leading-relaxed">
+            <p class="mt-4 leading-relaxed text-slate-400">
               Responsive websites with modern UI, contact forms, and
               professional branding.
             </p>
           </div>
 
-          <!-- Service 4 -->
           <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-8 hover:bg-white/10 transition"
+            class="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 class="text-2xl font-bold">Point of Sale Systems</h3>
-
-            <p class="mt-4 text-slate-400 leading-relaxed">
+            <p class="mt-4 leading-relaxed text-slate-400">
               Sales, inventory, reports, and receipt management for retail
               businesses.
             </p>
           </div>
 
-          <!-- Service 5 -->
           <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-8 hover:bg-white/10 transition"
+            class="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 class="text-2xl font-bold">AI-Powered Solutions</h3>
-
-            <p class="mt-4 text-slate-400 leading-relaxed">
+            <p class="mt-4 leading-relaxed text-slate-400">
               Smart assistants and AI-enhanced workflows integrated into modern
               applications.
             </p>
           </div>
 
-          <!-- Service 6 -->
           <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-8 hover:bg-white/10 transition"
+            class="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 class="text-2xl font-bold">Maintenance & Support</h3>
-
-            <p class="mt-4 text-slate-400 leading-relaxed">
+            <p class="mt-4 leading-relaxed text-slate-400">
               Continuous improvements, bug fixes, backups, and system support.
             </p>
           </div>
         </div>
       </div>
     </section>
+
     <!-- End Services Section -->
 
     <!-- ======================================================
-                    Statistics Section
-======================================================= -->
+                            Statistics Section
+        ======================================================= -->
 
-    <section class="py-20 px-6 border-t border-white/10">
-      <div class="max-w-6xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6">
+    <section id="statistics" class="border-t border-white/10 px-6 py-20">
+      <div class="mx-auto grid max-w-6xl grid-cols-2 gap-6 lg:grid-cols-4">
         <div
           class="rounded-3xl border border-white/10 bg-white/5 p-8 text-center"
         >
-          <h3 class="text-4xl md:text-5xl font-bold text-blue-400">5+</h3>
+          <h3 class="text-4xl font-bold text-blue-400 md:text-5xl">5+</h3>
           <p class="mt-3 text-slate-400">Project Concepts</p>
         </div>
 
         <div
           class="rounded-3xl border border-white/10 bg-white/5 p-8 text-center"
         >
-          <h3 class="text-4xl md:text-5xl font-bold text-blue-400">100%</h3>
+          <h3 class="text-4xl font-bold text-blue-400 md:text-5xl">100%</h3>
           <p class="mt-3 text-slate-400">Responsive Design</p>
         </div>
 
         <div
           class="rounded-3xl border border-white/10 bg-white/5 p-8 text-center"
         >
-          <h3 class="text-4xl md:text-5xl font-bold text-blue-400">AI</h3>
+          <h3 class="text-4xl font-bold text-blue-400 md:text-5xl">AI</h3>
           <p class="mt-3 text-slate-400">Powered Systems</p>
         </div>
 
         <div
           class="rounded-3xl border border-white/10 bg-white/5 p-8 text-center"
         >
-          <h3 class="text-4xl md:text-5xl font-bold text-blue-400">Git</h3>
+          <h3 class="text-4xl font-bold text-blue-400 md:text-5xl">Git</h3>
           <p class="mt-3 text-slate-400">Version Control</p>
         </div>
       </div>
@@ -373,35 +470,36 @@
     <!-- End Statistics Section -->
 
     <!-- ======================================================
-                    Contact Section
-======================================================= -->
+                            Contact Section
+        ======================================================= -->
 
-    <section id="contact" class="py-24 px-6 border-t border-white/10">
-      <div class="max-w-4xl mx-auto text-center">
+    <section id="contact" class="border-t border-white/10 px-6 py-24">
+      <div class="mx-auto max-w-4xl text-center">
         <p class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400">
           Contact
         </p>
 
-        <h2 class="mt-4 text-3xl md:text-5xl font-bold tracking-tight">
+        <h2 class="mt-4 text-3xl font-bold tracking-tight md:text-5xl">
           Let's Build Something Professional
         </h2>
 
-        <p class="mt-6 text-slate-400 leading-relaxed max-w-2xl mx-auto">
+        <p class="mx-auto mt-6 max-w-2xl leading-relaxed text-slate-400">
           Have a project idea, business system, or website in mind? I can help
           turn it into a clean, responsive, and functional web solution.
         </p>
 
-        <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+        <div class="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
           <a
             href="https://mail.google.com/mail/?view=cm&fs=1&to=francoiniegosystem@gmail.com&su=Project%20Inquiry&body=Hello%20Franco%2C%0D%0A%0D%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you."
             target="_blank"
-            class="rounded-2xl bg-blue-600 px-8 py-4 font-medium hover:bg-blue-700 transition"
+            class="rounded-2xl bg-blue-600 px-8 py-4 font-medium transition hover:bg-blue-700"
           >
             Email Me
           </a>
+
           <a
             href="#projects"
-            class="rounded-2xl border border-white/10 px-8 py-4 font-medium text-slate-300 hover:bg-white/10 hover:text-white transition"
+            class="rounded-2xl border border-white/10 px-8 py-4 font-medium text-slate-300 transition hover:bg-white/10 hover:text-white"
           >
             View Projects
           </a>
@@ -412,22 +510,22 @@
     <!-- End Contact Section -->
 
     <!-- ======================================================
-                    Footer Section
-======================================================= -->
+                            Footer Section
+        ======================================================= -->
 
-    <footer class="px-6 py-8 border-t border-white/10">
+    <footer class="border-t border-white/10 px-6 py-8">
       <div
-        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4"
+        class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 md:flex-row"
       >
         <p class="text-sm text-slate-400">
           © 2026 Franco Iniego. All rights reserved.
         </p>
 
         <div class="flex items-center gap-6 text-sm text-slate-400">
-          <a href="#home" class="hover:text-white transition">Home</a>
-          <a href="#about" class="hover:text-white transition">About</a>
-          <a href="#projects" class="hover:text-white transition">Projects</a>
-          <a href="#contact" class="hover:text-white transition">Contact</a>
+          <a href="#home" class="transition hover:text-white">Home</a>
+          <a href="#about" class="transition hover:text-white">About</a>
+          <a href="#projects" class="transition hover:text-white">Projects</a>
+          <a href="#contact" class="transition hover:text-white">Contact</a>
         </div>
       </div>
     </footer>
