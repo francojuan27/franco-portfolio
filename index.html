@@ -2,42 +2,66 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Franco Iniego - Web Developer. I build modern AI-powered web systems using PHP, MySQL, Tailwind CSS, and JavaScript. Specializing in LGU systems, business websites, and POS solutions."
+      content="Franco.dev is a premium developer portfolio showcasing modern AI-powered web systems built with PHP, MySQL, Tailwind CSS, and JavaScript."
     />
     <meta
       name="keywords"
-      content="Web Developer, PHP, MySQL, Tailwind CSS, JavaScript, LGU Systems, Portfolio"
+      content="Franco.dev, Web Developer, PHP Developer, AI Systems Developer, Tailwind CSS, Full Stack Developer, Portfolio, LGU Systems, POS"
     />
     <meta name="author" content="Franco Iniego" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://franco.dev/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
     <meta
       property="og:title"
-      content="Franco Iniego | Web Developer Portfolio"
+      content="Franco.dev | Premium Developer Portfolio"
     />
     <meta
       property="og:description"
-      content="Modern AI-powered web systems developer specializing in PHP, MySQL, and Tailwind CSS."
+      content="Modern AI-powered web systems developer specializing in PHP, MySQL, Tailwind CSS, and JavaScript."
     />
     <meta property="og:type" content="website" />
-    <title>Franco Iniego | Web Developer Portfolio</title>
+    <meta property="og:url" content="https://franco.dev/" />
+    <meta
+      property="og:image"
+      content="https://franco.dev/src/assets/hero.png"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Franco.dev | Premium Developer Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="Modern AI-powered web systems developer specializing in PHP, MySQL, Tailwind CSS, and JavaScript."
+    />
+    <meta
+      name="twitter:image"
+      content="https://franco.dev/src/assets/hero.png"
+    />
+
+    <title>Franco.dev | Premium Developer Portfolio</title>
   </head>
 
   <body class="bg-slate-950 text-white">
     <!-- ======================================================
                             Navbar Section
     ======================================================= -->
-
     <header
-      class="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-slate-950/80 backdrop-blur"
+      class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl"
     >
       <nav
-        class="relative mx-auto flex max-w-6xl items-center justify-between px-6 py-4"
+        class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4"
+        role="navigation"
+        aria-label="Primary navigation"
       >
-        <a href="#home" class="text-xl font-bold tracking-tight">
-          Franco<span class="text-blue-500">.dev</span>
+        <a href="#home" class="text-xl font-bold tracking-tight text-white">
+          Franco<span class="text-blue-400">.dev</span>
         </a>
 
         <div class="hidden items-center gap-8 text-sm text-slate-300 md:flex">
@@ -79,680 +103,1153 @@
           >
         </div>
 
-        <a
-          href="#projects"
-          class="hidden rounded-xl bg-blue-600 px-5 py-2 text-sm font-medium transition hover:bg-blue-700 md:inline-flex"
-        >
-          View Projects
-        </a>
+        <div class="flex items-center gap-3">
+          <a
+            href="#projects"
+            class="hidden rounded-2xl bg-blue-600 px-5 py-2 text-sm font-medium transition hover:bg-blue-700 md:inline-flex"
+            >View Projects</a
+          >
 
-        <button id="menu-btn" class="text-3xl text-white md:hidden">☰</button>
+          <button
+            id="menu-btn"
+            class="text-2xl text-white md:hidden"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
 
         <div
           id="mobile-menu"
-          class="absolute right-6 top-16 hidden w-56 rounded-2xl border border-white/10 bg-slate-900/95 shadow-2xl backdrop-blur md:hidden"
+          class="absolute right-6 top-20 hidden w-64 rounded-3xl border border-white/10 bg-slate-900/95 p-6 shadow-2xl backdrop-blur-md md:hidden"
+          role="menu"
+          aria-label="Mobile navigation"
+          aria-hidden="true"
+          tabindex="-1"
         >
-          <div class="flex flex-col gap-4 p-6 text-slate-300">
+          <div class="flex flex-col gap-4 text-slate-300">
             <a
               href="#home"
-              class="mobile-link nav-link transition hover:text-white"
+              class="mobile-link nav-link rounded-2xl px-4 py-3 transition hover:bg-white/10"
               data-section="home"
+              role="menuitem"
               >Home</a
             >
             <a
               href="#about"
-              class="mobile-link nav-link transition hover:text-white"
+              class="mobile-link nav-link rounded-2xl px-4 py-3 transition hover:bg-white/10"
               data-section="about"
+              role="menuitem"
               >About</a
             >
             <a
               href="#skills"
-              class="mobile-link nav-link transition hover:text-white"
+              class="mobile-link nav-link rounded-2xl px-4 py-3 transition hover:bg-white/10"
               data-section="skills"
+              role="menuitem"
               >Skills</a
             >
             <a
               href="#projects"
-              class="mobile-link nav-link transition hover:text-white"
+              class="mobile-link nav-link rounded-2xl px-4 py-3 transition hover:bg-white/10"
               data-section="projects"
+              role="menuitem"
               >Projects</a
             >
             <a
               href="#services"
-              class="mobile-link nav-link transition hover:text-white"
+              class="mobile-link nav-link rounded-2xl px-4 py-3 transition hover:bg-white/10"
               data-section="services"
+              role="menuitem"
               >Services</a
             >
             <a
               href="#contact"
-              class="mobile-link nav-link transition hover:text-white"
+              class="mobile-link nav-link rounded-2xl px-4 py-3 transition hover:bg-white/10"
               data-section="contact"
+              role="menuitem"
               >Contact</a
             >
           </div>
         </div>
       </nav>
     </header>
-
     <!-- End Navbar Section -->
 
-    <!-- ======================================================
-                            Hero Section
-    ======================================================= -->
-
-    <section id="home" class="flex min-h-screen items-center px-6 pt-24">
-      <div class="mx-auto grid max-w-6xl items-center gap-16 lg:grid-cols-2">
-        <div>
-          <p
-            class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400"
-          >
-            Web Developer Portfolio
-          </p>
-
-          <h1 class="mt-4 text-5xl font-bold leading-tight md:text-7xl">
-            Hi, I'm
-            <br />
-            <span class="inline-block text-blue-500">Franco Iniego</span>
-          </h1>
-
-          <p class="mt-8 text-xl leading-relaxed text-slate-400">
-            I build modern and AI-powered web systems using PHP, MySQL, Tailwind
-            CSS, and JavaScript.
-          </p>
-
-          <div class="mt-10 flex flex-wrap gap-4">
-            <a
-              href="#projects"
-              class="rounded-2xl bg-blue-600 px-8 py-4 font-medium transition hover:bg-blue-700"
-            >
-              View Projects
-            </a>
-
-            <a
-              href="#contact"
-              class="rounded-2xl border border-white/10 px-8 py-4 transition hover:bg-white/10"
-            >
-              Contact Me
-            </a>
-          </div>
+    <!-- Loading Screen -->
+    <div
+      id="loading-screen"
+      class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950 text-white transition-opacity duration-700"
+      role="status"
+      aria-live="polite"
+    >
+      <div
+        class="mx-auto max-w-md rounded-[32px] border border-white/10 bg-slate-900/95 p-10 text-center shadow-2xl backdrop-blur-xl"
+      >
+        <p class="text-sm uppercase tracking-[0.35em] text-blue-400">
+          Franco.dev
+        </p>
+        <h1 class="mt-6 text-4xl font-bold">Building Modern Web Systems...</h1>
+        <div class="mt-8 h-2 overflow-hidden rounded-full bg-white/10">
+          <div
+            class="progress-bar h-full w-0 rounded-full bg-blue-500 transition-all duration-500"
+          ></div>
         </div>
+      </div>
+    </div>
 
-        <div class="flex justify-center">
-          <div class="relative">
+    <main class="overflow-x-hidden">
+      <!-- ======================================================
+                              Hero Section
+      ======================================================= -->
+      <section id="home" class="pt-28">
+        <div
+          class="mx-auto grid max-w-6xl gap-16 px-6 pb-24 lg:grid-cols-2 lg:items-center"
+        >
+          <div class="space-y-8" data-animate="fade-up">
             <div
-              class="absolute inset-0 rounded-full bg-blue-600 opacity-30 blur-3xl"
-            ></div>
-
-            <img
-              src="/src/assets/profile.jpg"
-              alt="Franco Iniego profile photo"
-              class="relative h-80 w-80 rounded-full border-4 border-white/10 object-cover shadow-2xl md:h-96 md:w-96"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- End Hero Section -->
-
-    <!-- ======================================================
-                            About Section
-    ======================================================= -->
-
-    <section id="about" class="border-t border-white/10 px-6 py-24">
-      <div class="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
-        <div class="rounded-3xl border border-white/10 bg-white/5 p-8">
-          <p
-            class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400"
-          >
-            About Me
-          </p>
-
-          <h2 class="mt-4 text-3xl font-bold tracking-tight md:text-5xl">
-            I create clean and useful web systems.
-          </h2>
-
-          <p class="mt-6 leading-relaxed text-slate-400">
-            I am a PHP, MySQL, Tailwind CSS, and JavaScript developer focused on
-            building professional websites and practical systems for businesses,
-            offices, and LGU-style workflows.
-          </p>
-
-          <p class="mt-4 leading-relaxed text-slate-400">
-            My goal is to create web solutions that are simple to use, secure,
-            responsive, and ready for real-world deployment.
-          </p>
-
-          <div class="mt-8 flex flex-wrap gap-3">
-            <span
-              class="rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm text-blue-300"
-              >PHP</span
+              class="inline-flex items-center gap-3 rounded-full border border-white/10 bg-slate-900/80 px-4 py-2 text-sm uppercase tracking-[0.35em] text-blue-400 shadow-lg shadow-blue-500/10"
             >
-            <span
-              class="rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm text-blue-300"
-              >MySQL</span
-            >
-            <span
-              class="rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm text-blue-300"
-              >Tailwind CSS</span
-            >
-            <span
-              class="rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm text-blue-300"
-              >JavaScript</span
-            >
-          </div>
-        </div>
-
-        <div class="grid grid-cols-2 gap-4">
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <h3 class="text-4xl font-bold text-white">5+</h3>
-            <p class="mt-2 text-sm text-slate-400">Project Concepts</p>
-          </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <h3 class="text-4xl font-bold text-white">LGU</h3>
-            <p class="mt-2 text-sm text-slate-400">System Focus</p>
-          </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <h3 class="text-4xl font-bold text-white">100%</h3>
-            <p class="mt-2 text-sm text-slate-400">Responsive UI</p>
-          </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <h3 class="text-4xl font-bold text-white">Git</h3>
-            <p class="mt-2 text-sm text-slate-400">Version Control</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- End About Section -->
-
-    <!-- ======================================================
-                            Skills Section
-    ======================================================= -->
-
-    <section id="skills" class="border-t border-white/10 px-6 py-24">
-      <div class="mx-auto max-w-6xl">
-        <div class="max-w-2xl">
-          <p
-            class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400"
-          >
-            Skills
-          </p>
-
-          <h2 class="mt-4 text-3xl font-bold tracking-tight md:text-5xl">
-            Technologies I use to build systems.
-          </h2>
-
-          <p class="mt-6 leading-relaxed text-slate-400">
-            These are the tools and technologies I use for building clean,
-            responsive, and database-driven web applications.
-          </p>
-        </div>
-
-        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
-          >
-            <h3 class="text-xl font-bold">PHP</h3>
-            <p class="mt-3 text-sm leading-relaxed text-slate-400">
-              Backend logic, MVC structure, authentication, and secure web
-              systems.
-            </p>
-          </div>
-
-          <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
-          >
-            <h3 class="text-xl font-bold">MySQL</h3>
-            <p class="mt-3 text-sm leading-relaxed text-slate-400">
-              Database design, CRUD operations, relationships, and reporting
-              data.
-            </p>
-          </div>
-
-          <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
-          >
-            <h3 class="text-xl font-bold">Tailwind CSS</h3>
-            <p class="mt-3 text-sm leading-relaxed text-slate-400">
-              Responsive layouts, clean UI components, spacing, colors, and
-              modern design.
-            </p>
-          </div>
-
-          <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
-          >
-            <h3 class="text-xl font-bold">JavaScript</h3>
-            <p class="mt-3 text-sm leading-relaxed text-slate-400">
-              Interactivity, menus, form behavior, UI effects, and frontend
-              logic.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- End Skills Section -->
-
-    <!-- ======================================================
-                            Projects Section
-    ======================================================= -->
-
-    <section id="projects" class="border-t border-white/10 px-6 py-24">
-      <div class="mx-auto max-w-6xl">
-        <div class="max-w-2xl">
-          <p
-            class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400"
-          >
-            Featured Projects
-          </p>
-
-          <h2 class="mt-4 text-3xl font-bold tracking-tight md:text-5xl">
-            AI-Powered Web Systems
-          </h2>
-
-          <p class="mt-6 leading-relaxed text-slate-400">
-            A collection of modern system concepts and web applications focused
-            on automation, productivity, and digital transformation.
-          </p>
-        </div>
-
-        <div class="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
-          >
-            <p class="text-sm font-medium text-blue-400">LGU System</p>
-            <h3 class="mt-4 text-2xl font-bold">eDokumento</h3>
-            <p class="mt-2 font-medium text-blue-300">
-              AI-Powered Document Tracking System
-            </p>
-            <p class="mt-4 leading-relaxed text-slate-400">
-              Streamlining document routing, approvals, and monitoring for
-              organizations and local government units.
-            </p>
-          </div>
-
-          <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
-          >
-            <p class="text-sm font-medium text-blue-400">Legislative System</p>
-            <h3 class="mt-4 text-2xl font-bold">eLegislative</h3>
-            <p class="mt-2 font-medium text-blue-300">
-              AI-Powered Legislative Management System
-            </p>
-            <p class="mt-4 leading-relaxed text-slate-400">
-              Managing ordinances, resolutions, committee records, and
-              legislative workflows with intelligent assistance.
-            </p>
-          </div>
-
-          <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
-          >
-            <p class="text-sm font-medium text-blue-400">Permit System</p>
-            <h3 class="mt-4 text-2xl font-bold">eBPLS</h3>
-            <p class="mt-2 font-medium text-blue-300">
-              AI-Powered Business Permit and Licensing System
-            </p>
-            <p class="mt-4 leading-relaxed text-slate-400">
-              Simplifying permit applications, assessments, approvals, and
-              renewals for local government units.
-            </p>
-          </div>
-
-          <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
-          >
-            <p class="text-sm font-medium text-blue-400">Business Website</p>
-            <h3 class="mt-4 text-2xl font-bold">Dynamic Website</h3>
-            <p class="mt-2 font-medium text-blue-300">
-              AI-Powered Business Website Platform
-            </p>
-            <p class="mt-4 leading-relaxed text-slate-400">
-              Creating responsive and modern websites with intelligent content
-              and interactive user experiences.
-            </p>
-          </div>
-
-          <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
-          >
-            <p class="text-sm font-medium text-blue-400">Retail System</p>
-            <h3 class="mt-4 text-2xl font-bold">POS Pro</h3>
-            <p class="mt-2 font-medium text-blue-300">
-              AI-Powered Point of Sale and Inventory System
-            </p>
-            <p class="mt-4 leading-relaxed text-slate-400">
-              Managing sales, inventory, receipts, and reports through a smart
-              and efficient retail platform.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- End Projects Section -->
-
-    <!-- ======================================================
-                            Services Section
-    ======================================================= -->
-
-    <section id="services" class="border-t border-white/10 px-6 py-24">
-      <div class="mx-auto max-w-6xl">
-        <div class="max-w-2xl">
-          <p
-            class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400"
-          >
-            Services
-          </p>
-
-          <h2 class="mt-4 text-3xl font-bold tracking-tight md:text-5xl">
-            Solutions I Can Build
-          </h2>
-
-          <p class="mt-6 leading-relaxed text-slate-400">
-            I develop modern, responsive, and database-driven web applications
-            tailored for businesses and organizations.
-          </p>
-        </div>
-
-        <div class="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
-          >
-            <h3 class="text-2xl font-bold">Custom Web Systems</h3>
-            <p class="mt-4 leading-relaxed text-slate-400">
-              Design and development of tailored web applications using PHP,
-              MySQL, Tailwind CSS, and JavaScript.
-            </p>
-          </div>
-
-          <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
-          >
-            <h3 class="text-2xl font-bold">LGU Digital Solutions</h3>
-            <p class="mt-4 leading-relaxed text-slate-400">
-              Development of systems for document tracking, permits, legislative
-              management, and office workflows.
-            </p>
-          </div>
-
-          <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
-          >
-            <h3 class="text-2xl font-bold">Business Websites</h3>
-            <p class="mt-4 leading-relaxed text-slate-400">
-              Responsive websites with modern UI, contact forms, and
-              professional branding.
-            </p>
-          </div>
-
-          <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
-          >
-            <h3 class="text-2xl font-bold">Point of Sale Systems</h3>
-            <p class="mt-4 leading-relaxed text-slate-400">
-              Sales, inventory, reports, and receipt management for retail
-              businesses.
-            </p>
-          </div>
-
-          <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
-          >
-            <h3 class="text-2xl font-bold">AI-Powered Solutions</h3>
-            <p class="mt-4 leading-relaxed text-slate-400">
-              Smart assistants and AI-enhanced workflows integrated into modern
-              applications.
-            </p>
-          </div>
-
-          <div
-            class="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
-          >
-            <h3 class="text-2xl font-bold">Maintenance & Support</h3>
-            <p class="mt-4 leading-relaxed text-slate-400">
-              Continuous improvements, bug fixes, backups, and system support.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- End Services Section -->
-
-    <!-- ======================================================
-                            Statistics Section
-    ======================================================= -->
-
-    <section id="statistics" class="border-t border-white/10 px-6 py-20">
-      <div class="mx-auto grid max-w-6xl grid-cols-2 gap-6 lg:grid-cols-4">
-        <div
-          class="rounded-3xl border border-white/10 bg-white/5 p-8 text-center"
-        >
-          <h3 class="text-4xl font-bold text-blue-400 md:text-5xl">5+</h3>
-          <p class="mt-3 text-slate-400">Project Concepts</p>
-        </div>
-
-        <div
-          class="rounded-3xl border border-white/10 bg-white/5 p-8 text-center"
-        >
-          <h3 class="text-4xl font-bold text-blue-400 md:text-5xl">100%</h3>
-          <p class="mt-3 text-slate-400">Responsive Design</p>
-        </div>
-
-        <div
-          class="rounded-3xl border border-white/10 bg-white/5 p-8 text-center"
-        >
-          <h3 class="text-4xl font-bold text-blue-400 md:text-5xl">AI</h3>
-          <p class="mt-3 text-slate-400">Powered Systems</p>
-        </div>
-
-        <div
-          class="rounded-3xl border border-white/10 bg-white/5 p-8 text-center"
-        >
-          <h3 class="text-4xl font-bold text-blue-400 md:text-5xl">Git</h3>
-          <p class="mt-3 text-slate-400">Version Control</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- End Statistics Section -->
-
-    <!-- ======================================================
-                            Contact Section
-    ======================================================= -->
-
-    <section id="contact" class="border-t border-white/10 px-6 py-24">
-      <div class="mx-auto max-w-4xl text-center">
-        <p class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400">
-          Contact
-        </p>
-
-        <h2 class="mt-4 text-3xl font-bold tracking-tight md:text-5xl">
-          Let's Build Something Professional
-        </h2>
-
-        <p class="mx-auto mt-6 max-w-2xl leading-relaxed text-slate-400">
-          Have a project idea, business system, or website in mind? I can help
-          turn it into a clean, responsive, and functional web solution.
-        </p>
-
-        <div class="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
-          <button
-            type="button"
-            id="contact-form-toggle"
-            class="rounded-2xl bg-blue-600 px-8 py-4 font-medium transition hover:bg-blue-700"
-          >
-            Send Message
-          </button>
-
-          <a
-            href="#projects"
-            class="rounded-2xl border border-white/10 px-8 py-4 font-medium text-slate-300 transition hover:bg-white/10 hover:text-white"
-          >
-            View Projects
-          </a>
-        </div>
-
-        <!-- Contact Form Modal -->
-        <div
-          id="contact-modal"
-          class="fixed inset-0 z-40 hidden items-center justify-center bg-black/50 px-6 py-6"
-        >
-          <div
-            class="w-full max-w-md rounded-3xl border border-white/10 bg-slate-900 p-8 text-left"
-          >
-            <div class="flex items-center justify-between">
-              <h3 class="text-2xl font-bold text-left">Send me a message</h3>
-              <button
-                type="button"
-                id="contact-form-close"
-                class="text-2xl text-slate-400 transition hover:text-white"
+              <span class="h-2 w-2 rounded-full bg-blue-400"></span>
+              Developer Portfolio
+            </div>
+            <div class="space-y-6">
+              <h1
+                class="text-5xl font-bold leading-tight tracking-tight text-white md:text-6xl lg:text-7xl"
               >
-                ×
-              </button>
+                Hi, I'm <span class="text-blue-400">Franco Iniego</span>
+              </h1>
+              <p class="max-w-2xl text-xl leading-relaxed text-slate-300">
+                I build premium AI-enhanced web systems using PHP, MySQL,
+                Tailwind CSS, and JavaScript. My work is focused on secure,
+                responsive, and professional user experiences.
+              </p>
+            </div>
+            <div class="space-y-3 text-lg text-slate-400">
+              <p class="inline-flex items-center gap-3">
+                <span
+                  class="inline-flex h-3 w-3 animate-pulse rounded-full bg-blue-400"
+                ></span>
+                <span
+                  id="hero-typed"
+                  class="font-semibold text-white"
+                  aria-live="polite"
+                  aria-atomic="true"
+                ></span>
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="#projects"
+                class="rounded-2xl bg-blue-600 px-8 py-4 text-sm font-semibold transition hover:bg-blue-700"
+                >View Projects</a
+              >
+              <a
+                href="#contact"
+                class="rounded-2xl border border-white/10 px-8 py-4 text-sm font-semibold text-slate-200 transition hover:bg-white/10"
+                >Contact Me</a
+              >
+            </div>
+          </div>
+
+          <div class="relative flex justify-center" data-animate="fade-left">
+            <div
+              class="absolute -inset-4 rounded-full bg-gradient-to-r from-blue-500/20 via-sky-400/20 to-violet-500/15 blur-3xl"
+            ></div>
+            <div
+              class="relative overflow-hidden rounded-[32px] border border-white/10 bg-slate-900/90 p-4 shadow-2xl shadow-blue-500/10"
+            >
+              <div
+                class="relative mx-auto h-[380px] w-[380px] overflow-hidden rounded-full border border-white/10 bg-slate-950 p-2 shadow-xl"
+              >
+                <img
+                  src="/src/assets/profile.jpg"
+                  alt="Franco Iniego profile"
+                  class="floating-image h-full w-full rounded-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Hero Section -->
+
+      <!-- ======================================================
+                              About Section
+      ======================================================= -->
+      <section id="about" class="border-t border-white/10 px-6 py-24">
+        <div class="mx-auto max-w-6xl">
+          <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div data-animate="fade-right">
+              <span
+                class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400"
+                >About Me</span
+              >
+              <h2
+                class="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl"
+              >
+                I create clean and useful web systems.
+              </h2>
+              <p class="mt-6 leading-relaxed text-slate-400">
+                I am a PHP, MySQL, Tailwind CSS, and JavaScript developer
+                focused on professional websites and practical systems for
+                businesses, offices, and LGU workflows.
+              </p>
+              <p class="mt-4 leading-relaxed text-slate-400">
+                My goal is to create secure, responsive, and intelligent web
+                solutions that are simple to use and ready for production.
+              </p>
+              <div class="mt-8 flex flex-wrap gap-3">
+                <span
+                  class="rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm text-blue-300"
+                  >PHP</span
+                >
+                <span
+                  class="rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm text-blue-300"
+                  >MySQL</span
+                >
+                <span
+                  class="rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm text-blue-300"
+                  >Tailwind CSS</span
+                >
+                <span
+                  class="rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm text-blue-300"
+                  >JavaScript</span
+                >
+              </div>
             </div>
 
-            <form id="contact-form" class="mt-6 flex flex-col gap-4 text-left">
-              <div>
-                <label
-                  for="name"
-                  class="block text-sm font-medium text-slate-300"
-                  >Name</label
+            <div class="grid gap-4 md:grid-cols-2">
+              <article class="glass-card p-6" data-animate="zoom-in">
+                <p
+                  class="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400"
                 >
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  class="mt-2 w-full rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-white placeholder-slate-500 transition focus:border-blue-500 focus:bg-white/10 focus:outline-none"
-                  placeholder="Your name"
-                />
-              </div>
-
-              <div>
-                <label
-                  for="email"
-                  class="block text-sm font-medium text-slate-300"
-                  >Email</label
+                  Clean Code
+                </p>
+                <h3 class="mt-4 text-2xl font-bold text-white">
+                  Readable architecture
+                </h3>
+                <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                  Modern code structure, reusable components, and maintainable
+                  logic.
+                </p>
+              </article>
+              <article class="glass-card p-6" data-animate="zoom-in">
+                <p
+                  class="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400"
                 >
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  class="mt-2 w-full rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-white placeholder-slate-500 transition focus:border-blue-500 focus:bg-white/10 focus:outline-none"
-                  placeholder="your@email.com"
-                />
-              </div>
-
-              <div>
-                <label
-                  for="subject"
-                  class="block text-sm font-medium text-slate-300"
-                  >Subject</label
+                  Responsive Design
+                </p>
+                <h3 class="mt-4 text-2xl font-bold text-white">
+                  Mobile-first UI
+                </h3>
+                <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                  Pixel-perfect layouts that adapt across screens and devices.
+                </p>
+              </article>
+              <article class="glass-card p-6" data-animate="zoom-in">
+                <p
+                  class="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400"
                 >
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  required
-                  class="mt-2 w-full rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-white placeholder-slate-500 transition focus:border-blue-500 focus:bg-white/10 focus:outline-none"
-                  placeholder="Project inquiry..."
-                />
-              </div>
-
-              <div>
-                <label
-                  for="message"
-                  class="block text-sm font-medium text-slate-300"
-                  >Message</label
+                  Secure Development
+                </p>
+                <h3 class="mt-4 text-2xl font-bold text-white">
+                  Trusted systems
+                </h3>
+                <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                  Authentication, validation, and production-ready security
+                  practices.
+                </p>
+              </article>
+              <article class="glass-card p-6" data-animate="zoom-in">
+                <p
+                  class="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400"
                 >
-                <textarea
-                  id="message"
-                  name="message"
-                  required
-                  rows="5"
-                  class="mt-2 w-full rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-white placeholder-slate-500 transition focus:border-blue-500 focus:bg-white/10 focus:outline-none"
-                  placeholder="Tell me about your project..."
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                class="rounded-lg bg-blue-600 px-4 py-2 font-medium transition hover:bg-blue-700"
-              >
-                Send Message
-              </button>
-            </form>
+                  AI Powered Solutions
+                </p>
+                <h3 class="mt-4 text-2xl font-bold text-white">
+                  Smart workflows
+                </h3>
+                <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                  Intelligent system enhancements with automation and AI-aware
+                  design.
+                </p>
+              </article>
+            </div>
           </div>
         </div>
-        <!-- Social Links -->
-        <div class="mt-12 flex flex-wrap justify-center gap-6">
-          <a
-            href="https://github.com/francojuan27"
-            target="_blank"
-            class="rounded-2xl border border-white/10 bg-white/5 px-6 py-3 transition hover:bg-white/10 text-xl"
-          >
-            <i class="fa-brands fa-github"></i>
-          </a>
+      </section>
+      <!-- End About Section -->
 
-          <a
-            href="https://web.facebook.com/frank.john.735"
-            target="_blank"
-            class="rounded-2xl border border-white/10 bg-white/5 px-6 py-3 transition hover:bg-white/10 text-xl"
-          >
-            <i class="fa-brands fa-facebook"></i>
-          </a>
+      <!-- ======================================================
+                              Skills Section
+      ======================================================= -->
+      <section id="skills" class="border-t border-white/10 px-6 py-24">
+        <div class="mx-auto max-w-6xl">
+          <div class="max-w-2xl" data-animate="fade-up">
+            <span
+              class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400"
+              >Skills</span
+            >
+            <h2
+              class="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl"
+            >
+              Technologies I use to build systems.
+            </h2>
+            <p class="mt-6 leading-relaxed text-slate-400">
+              These are the tools and technologies I use for building clean,
+              responsive, and database-driven web applications.
+            </p>
+          </div>
 
-          <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=francoiniegosystem@gmail.com"
-            target="_blank"
-            class="rounded-2xl border border-blue-500/20 bg-blue-500/10 px-6 py-3 text-blue-300 transition hover:bg-blue-600 hover:text-white text-xl"
-          >
-            <i class="fa-solid fa-envelope"></i>
-          </a>
+          <div class="mt-12 space-y-8">
+            <div class="skill-row glass-card p-6" data-animate="fade-up">
+              <div class="flex items-center justify-between gap-4">
+                <div>
+                  <h3 class="text-xl font-bold text-white">PHP</h3>
+                  <p class="text-sm text-slate-400">
+                    Backend development and system architecture.
+                  </p>
+                </div>
+                <span class="text-sm font-semibold text-blue-400">85%</span>
+              </div>
+              <div class="mt-4 h-3 overflow-hidden rounded-full bg-white/10">
+                <div
+                  data-progress="85"
+                  class="h-full w-0 rounded-full bg-gradient-to-r from-blue-500 to-sky-400 transition-all"
+                ></div>
+              </div>
+            </div>
+
+            <div class="skill-row glass-card p-6" data-animate="fade-up">
+              <div class="flex items-center justify-between gap-4">
+                <div>
+                  <h3 class="text-xl font-bold text-white">MySQL</h3>
+                  <p class="text-sm text-slate-400">
+                    Database design and optimized queries.
+                  </p>
+                </div>
+                <span class="text-sm font-semibold text-blue-400">85%</span>
+              </div>
+              <div class="mt-4 h-3 overflow-hidden rounded-full bg-white/10">
+                <div
+                  data-progress="85"
+                  class="h-full w-0 rounded-full bg-gradient-to-r from-blue-500 to-sky-400 transition-all"
+                ></div>
+              </div>
+            </div>
+
+            <div class="skill-row glass-card p-6" data-animate="fade-up">
+              <div class="flex items-center justify-between gap-4">
+                <div>
+                  <h3 class="text-xl font-bold text-white">Tailwind CSS</h3>
+                  <p class="text-sm text-slate-400">
+                    Responsive layouts and modern UI design systems.
+                  </p>
+                </div>
+                <span class="text-sm font-semibold text-blue-400">90%</span>
+              </div>
+              <div class="mt-4 h-3 overflow-hidden rounded-full bg-white/10">
+                <div
+                  data-progress="90"
+                  class="h-full w-0 rounded-full bg-gradient-to-r from-blue-500 to-sky-400 transition-all"
+                ></div>
+              </div>
+            </div>
+
+            <div class="skill-row glass-card p-6" data-animate="fade-up">
+              <div class="flex items-center justify-between gap-4">
+                <div>
+                  <h3 class="text-xl font-bold text-white">JavaScript</h3>
+                  <p class="text-sm text-slate-400">
+                    Interactive UI and frontend logic.
+                  </p>
+                </div>
+                <span class="text-sm font-semibold text-blue-400">85%</span>
+              </div>
+              <div class="mt-4 h-3 overflow-hidden rounded-full bg-white/10">
+                <div
+                  data-progress="85"
+                  class="h-full w-0 rounded-full bg-gradient-to-r from-blue-500 to-sky-400 transition-all"
+                ></div>
+              </div>
+            </div>
+
+            <div class="skill-row glass-card p-6" data-animate="fade-up">
+              <div class="flex items-center justify-between gap-4">
+                <div>
+                  <h3 class="text-xl font-bold text-white">Git & GitHub</h3>
+                  <p class="text-sm text-slate-400">
+                    Version control, collaboration, and release workflows.
+                  </p>
+                </div>
+                <span class="text-sm font-semibold text-blue-400">90%</span>
+              </div>
+              <div class="mt-4 h-3 overflow-hidden rounded-full bg-white/10">
+                <div
+                  data-progress="90"
+                  class="h-full w-0 rounded-full bg-gradient-to-r from-blue-500 to-sky-400 transition-all"
+                ></div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <!-- End Skills Section -->
 
-    <!-- End Contact Section -->
+      <!-- ======================================================
+                              Projects Section
+      ======================================================= -->
+      <section id="projects" class="border-t border-white/10 px-6 py-24">
+        <div class="mx-auto max-w-6xl">
+          <div class="max-w-2xl" data-animate="fade-up">
+            <span
+              class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400"
+              >Featured Projects</span
+            >
+            <h2
+              class="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl"
+            >
+              AI-Powered Web Systems
+            </h2>
+            <p class="mt-6 leading-relaxed text-slate-400">
+              A collection of modern system concepts and web applications
+              focused on automation, productivity, and digital transformation.
+            </p>
+          </div>
 
-    <!-- ======================================================
-                            Footer Section
-    ======================================================= -->
+          <div class="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <article class="project-card group" data-animate="fade-up">
+              <div class="mt-6 space-y-3">
+                <span
+                  class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400"
+                  >LGU System</span
+                >
+                <h3 class="text-2xl font-bold text-white">eDokumento</h3>
+                <p class="text-sm font-medium text-blue-300">
+                  AI-Powered Document Tracking System
+                </p>
+                <p class="leading-relaxed text-slate-400">
+                  Streamlining routing, approvals, and monitoring for
+                  organizations and local government units.
+                </p>
+              </div>
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span class="badge">PHP</span>
+                <span class="badge">MySQL</span>
+                <span class="badge">AI</span>
+              </div>
+              <div class="mt-6 flex flex-wrap gap-3">
+                <a href="#" class="project-btn">GitHub</a>
+                <a href="#" class="project-btn project-btn-secondary"
+                  >Live Demo</a
+                >
+              </div>
+            </article>
 
-    <footer class="border-t border-white/10 px-6 py-8">
-      <div
-        class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 md:flex-row"
-      >
-        <p class="text-sm text-slate-400">
-          © 2026 Franco Iniego. All rights reserved.
-        </p>
+            <article class="project-card group" data-animate="fade-up">
+              <div class="mt-6 space-y-3">
+                <span
+                  class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400"
+                  >Legislative System</span
+                >
+                <h3 class="text-2xl font-bold text-white">eLegislative</h3>
+                <p class="text-sm font-medium text-blue-300">
+                  AI-Powered Legislative Management System
+                </p>
+                <p class="leading-relaxed text-slate-400">
+                  Managing ordinances, resolutions, committee records, and
+                  legislative workflows with intelligent assistance.
+                </p>
+              </div>
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span class="badge">Tailwind</span>
+                <span class="badge">JS</span>
+                <span class="badge">AI</span>
+              </div>
+              <div class="mt-6 flex flex-wrap gap-3">
+                <a href="#" class="project-btn">GitHub</a>
+                <a href="#" class="project-btn project-btn-secondary"
+                  >Live Demo</a
+                >
+              </div>
+            </article>
 
-        <div class="flex items-center gap-6 text-sm text-slate-400">
-          <a href="#home" class="transition hover:text-white">Home</a>
-          <a href="#about" class="transition hover:text-white">About</a>
-          <a href="#projects" class="transition hover:text-white">Projects</a>
-          <a href="#contact" class="transition hover:text-white">Contact</a>
+            <article class="project-card group" data-animate="fade-up">
+              <div class="mt-6 space-y-3">
+                <span
+                  class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400"
+                  >Permit System</span
+                >
+                <h3 class="text-2xl font-bold text-white">eBPLS</h3>
+                <p class="text-sm font-medium text-blue-300">
+                  AI-Powered Business Permit and Licensing System
+                </p>
+                <p class="leading-relaxed text-slate-400">
+                  Simplifying permit applications, assessments, approvals, and
+                  renewals for local government units.
+                </p>
+              </div>
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span class="badge">PHP</span>
+                <span class="badge">MySQL</span>
+                <span class="badge">UX</span>
+              </div>
+              <div class="mt-6 flex flex-wrap gap-3">
+                <a href="#" class="project-btn">GitHub</a>
+                <a href="#" class="project-btn project-btn-secondary"
+                  >Live Demo</a
+                >
+              </div>
+            </article>
+
+            <article class="project-card group" data-animate="fade-up">
+              <div class="mt-6 space-y-3">
+                <span
+                  class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400"
+                  >Business Website</span
+                >
+                <h3 class="text-2xl font-bold text-white">Dynamic Website</h3>
+                <p class="text-sm font-medium text-blue-300">
+                  AI-Powered Business Website Platform
+                </p>
+                <p class="leading-relaxed text-slate-400">
+                  Creating responsive and modern websites with intelligent
+                  content and interactive user experiences.
+                </p>
+              </div>
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span class="badge">Tailwind</span>
+                <span class="badge">JS</span>
+                <span class="badge">Design</span>
+              </div>
+              <div class="mt-6 flex flex-wrap gap-3">
+                <a href="#" class="project-btn">GitHub</a>
+                <a href="#" class="project-btn project-btn-secondary"
+                  >Live Demo</a
+                >
+              </div>
+            </article>
+
+            <article class="project-card group" data-animate="fade-up">
+              <div class="project-image" aria-hidden="true"></div>
+              <div class="mt-6 space-y-3">
+                <span
+                  class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400"
+                  >Retail System</span
+                >
+                <h3 class="text-2xl font-bold text-white">POS Pro</h3>
+                <p class="text-sm font-medium text-blue-300">
+                  AI-Powered Point of Sale and Inventory System
+                </p>
+                <p class="leading-relaxed text-slate-400">
+                  Managing sales, inventory, receipts, and reports through a
+                  smart and efficient retail platform.
+                </p>
+              </div>
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span class="badge">PHP</span>
+                <span class="badge">MySQL</span>
+                <span class="badge">POS</span>
+              </div>
+              <div class="mt-6 flex flex-wrap gap-3">
+                <a href="#" class="project-btn">GitHub</a>
+                <a href="#" class="project-btn project-btn-secondary"
+                  >Live Demo</a
+                >
+              </div>
+            </article>
+          </div>
         </div>
-      </div>
-    </footer>
+      </section>
+      <!-- End Projects Section -->
 
-    <!-- End Footer Section -->
+      <!-- ======================================================
+                              Services Section
+      ======================================================= -->
+      <section id="services" class="border-t border-white/10 px-6 py-24">
+        <div class="mx-auto max-w-6xl">
+          <div class="max-w-2xl" data-animate="fade-up">
+            <span
+              class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400"
+              >Services</span
+            >
+            <h2
+              class="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl"
+            >
+              Solutions I Can Build
+            </h2>
+            <p class="mt-6 leading-relaxed text-slate-400">
+              I develop modern, responsive, and database-driven web applications
+              tailored for businesses and organizations.
+            </p>
+          </div>
 
-    <script type="module" src="/src/main.js"></script>
-    <!-- Back To Top Button -->
+          <div class="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <article class="service-card" data-animate="fade-up">
+              <div class="icon-container"><i class="fa-solid fa-code"></i></div>
+              <h3 class="mt-6 text-2xl font-bold text-white">
+                Custom Web Systems
+              </h3>
+              <p class="mt-4 leading-relaxed text-slate-400">
+                Tailored web applications using PHP, MySQL, Tailwind CSS, and
+                JavaScript.
+              </p>
+            </article>
+            <article class="service-card" data-animate="fade-up">
+              <div class="icon-container"><i class="fa-solid fa-city"></i></div>
+              <h3 class="mt-6 text-2xl font-bold text-white">
+                LGU Digital Solutions
+              </h3>
+              <p class="mt-4 leading-relaxed text-slate-400">
+                Systems for document tracking, permits, legislative management,
+                and office workflows.
+              </p>
+            </article>
+            <article class="service-card" data-animate="fade-up">
+              <div class="icon-container">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <h3 class="mt-6 text-2xl font-bold text-white">
+                Business Websites
+              </h3>
+              <p class="mt-4 leading-relaxed text-slate-400">
+                Responsive websites with modern UI, contact forms, and
+                professional branding.
+              </p>
+            </article>
+            <article class="service-card" data-animate="fade-up">
+              <div class="icon-container">
+                <i class="fa-solid fa-shopping-cart"></i>
+              </div>
+              <h3 class="mt-6 text-2xl font-bold text-white">
+                Point of Sale Systems
+              </h3>
+              <p class="mt-4 leading-relaxed text-slate-400">
+                Sales, inventory, reports, and receipt management for retail
+                businesses.
+              </p>
+            </article>
+            <article class="service-card" data-animate="fade-up">
+              <div class="icon-container">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <h3 class="mt-6 text-2xl font-bold text-white">
+                AI-Powered Solutions
+              </h3>
+              <p class="mt-4 leading-relaxed text-slate-400">
+                Smart assistants and AI-enhanced workflows integrated into
+                modern applications.
+              </p>
+            </article>
+            <article class="service-card" data-animate="fade-up">
+              <div class="icon-container">
+                <i class="fa-solid fa-hands-helping"></i>
+              </div>
+              <h3 class="mt-6 text-2xl font-bold text-white">
+                Maintenance & Support
+              </h3>
+              <p class="mt-4 leading-relaxed text-slate-400">
+                Ongoing updates, backups, security fixes, and system support.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+      <!-- ======================================================
+                              Statistics Section
+      ======================================================= -->
+      <section id="statistics" class="border-t border-white/10 px-6 py-20">
+        <div
+          class="mx-auto grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
+        >
+          <div class="glass-card p-8 text-center" data-animate="fade-up">
+            <h3 class="text-5xl font-bold text-blue-400">
+              <span data-count-target="5">0</span>+
+            </h3>
+            <p class="mt-3 text-slate-400">Projects</p>
+          </div>
+          <div class="glass-card p-8 text-center" data-animate="fade-up">
+            <h3 class="text-5xl font-bold text-blue-400">
+              <span data-count-target="100" data-count-suffix="%">0</span>
+            </h3>
+            <p class="mt-3 text-slate-400">Responsive Design</p>
+          </div>
+          <div class="glass-card p-8 text-center" data-animate="fade-up">
+            <h3 class="text-5xl font-bold text-blue-400">
+              <span data-count-target="100" data-count-suffix="%">0</span>
+            </h3>
+            <p class="mt-3 text-slate-400">AI Powered Solutions</p>
+          </div>
+          <div class="glass-card p-8 text-center" data-animate="fade-up">
+            <h3 class="text-5xl font-bold text-blue-400">
+              <span data-count-target="100" data-count-suffix="%">0</span>
+            </h3>
+            <p class="mt-3 text-slate-400">Git Version Control</p>
+          </div>
+        </div>
+      </section>
+      <!-- End Statistics Section -->
+
+      <!-- ======================================================
+                              Timeline Section
+      ======================================================= -->
+      <section id="timeline" class="border-t border-white/10 px-6 py-24">
+        <div class="mx-auto max-w-6xl">
+          <div class="max-w-2xl" data-animate="fade-up">
+            <span
+              class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400"
+              >Timeline</span
+            >
+            <h2
+              class="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl"
+            >
+              Career milestones and recent work.
+            </h2>
+          </div>
+
+          <div class="relative mt-16 space-y-12">
+            <div class="timeline-line"></div>
+            <article class="timeline-item" data-animate="fade-right">
+              <div class="timeline-marker"></div>
+              <div
+                class="ml-10 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl shadow-blue-500/5"
+              >
+                <span
+                  class="text-sm font-semibold uppercase tracking-[0.25em] text-blue-400"
+                  >2024</span
+                >
+                <h3 class="mt-4 text-2xl font-bold text-white">
+                  Started Web Development
+                </h3>
+                <p class="mt-3 text-slate-400">
+                  Began building web systems with a focus on robust backend
+                  architecture and responsive frontend design.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item" data-animate="fade-left">
+              <div class="timeline-marker"></div>
+              <div
+                class="ml-10 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl shadow-blue-500/5"
+              >
+                <span
+                  class="text-sm font-semibold uppercase tracking-[0.25em] text-blue-400"
+                  >2025</span
+                >
+                <h3 class="mt-4 text-2xl font-bold text-white">
+                  Built eDokumento
+                </h3>
+                <p class="mt-3 text-slate-400">
+                  Delivered an AI-powered document tracking system for LGU
+                  workflows and office automation.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item" data-animate="fade-right">
+              <div class="timeline-marker"></div>
+              <div
+                class="ml-10 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl shadow-blue-500/5"
+              >
+                <span
+                  class="text-sm font-semibold uppercase tracking-[0.25em] text-blue-400"
+                  >2025</span
+                >
+                <h3 class="mt-4 text-2xl font-bold text-white">
+                  Developed eBPLS
+                </h3>
+                <p class="mt-3 text-slate-400">
+                  Built an AI-enhanced business permit and licensing system to
+                  simplify LGU processes.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item" data-animate="fade-left">
+              <div class="timeline-marker"></div>
+              <div
+                class="ml-10 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl shadow-blue-500/5"
+              >
+                <span
+                  class="text-sm font-semibold uppercase tracking-[0.25em] text-blue-400"
+                  >2026</span
+                >
+                <h3 class="mt-4 text-2xl font-bold text-white">
+                  Portfolio Website
+                </h3>
+                <p class="mt-3 text-slate-400">
+                  Launched this premium developer portfolio with polished
+                  animations, responsive design, and production focus.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- End Timeline Section -->
+
+      <!-- ======================================================
+                              Testimonials Section
+      ======================================================= -->
+      <section id="testimonials" class="border-t border-white/10 px-6 py-24">
+        <div class="mx-auto max-w-6xl">
+          <div class="max-w-2xl" data-animate="fade-up">
+            <span
+              class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400"
+              >Testimonials</span
+            >
+            <h2
+              class="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl"
+            >
+              Trusted by clients for modern systems.
+            </h2>
+          </div>
+
+          <div class="mt-16 grid gap-8 lg:grid-cols-3">
+            <article class="testimonial-card" data-animate="fade-up">
+              <div class="flex items-center gap-3">
+                <div class="h-12 w-12 rounded-full bg-blue-500/15"></div>
+                <div>
+                  <h3 class="font-semibold text-white">Mariel Santiago</h3>
+                  <p class="text-sm text-slate-400">LGU Operations Head</p>
+                </div>
+              </div>
+              <div class="mt-4 flex gap-1 text-blue-400">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p class="mt-4 text-slate-400">
+                "Franco delivered a polished system that modernized our document
+                workflows and improved staff productivity."
+              </p>
+            </article>
+            <article class="testimonial-card" data-animate="fade-up">
+              <div class="flex items-center gap-3">
+                <div class="h-12 w-12 rounded-full bg-blue-500/15"></div>
+                <div>
+                  <h3 class="font-semibold text-white">Jason Cruz</h3>
+                  <p class="text-sm text-slate-400">Business Owner</p>
+                </div>
+              </div>
+              <div class="mt-4 flex gap-1 text-blue-400">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="mt-4 text-slate-400">
+                "The responsive website and system integration gave our business
+                the professional edge we needed."
+              </p>
+            </article>
+            <article class="testimonial-card" data-animate="fade-up">
+              <div class="flex items-center gap-3">
+                <div class="h-12 w-12 rounded-full bg-blue-500/15"></div>
+                <div>
+                  <h3 class="font-semibold text-white">Aya Hernandez</h3>
+                  <p class="text-sm text-slate-400">Project Manager</p>
+                </div>
+              </div>
+              <div class="mt-4 flex gap-1 text-blue-400">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="mt-4 text-slate-400">
+                "Clear communication, fast delivery, and a strong focus on
+                quality. Highly recommended."
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- End Testimonials Section -->
+
+      <!-- ======================================================
+                              Download Resume Section
+      ======================================================= -->
+      <section id="resume" class="border-t border-white/10 px-6 py-24">
+        <div class="mx-auto max-w-6xl">
+          <div
+            class="glass-card flex flex-col items-center justify-between gap-6 rounded-[32px] border border-white/10 bg-slate-900/80 p-10 text-center sm:flex-row sm:text-left"
+            data-animate="fade-up"
+          >
+            <div>
+              <span
+                class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400"
+                >Resume</span
+              >
+              <h2 class="mt-4 text-3xl font-bold text-white md:text-4xl">
+                Download my professional resume.
+              </h2>
+              <p class="mt-4 max-w-xl text-slate-400">
+                Review my experience, technologies, and completed projects with
+                a polished resume built for hiring managers and clients.
+              </p>
+            </div>
+            <a
+              href="/resume.pdf"
+              download
+              class="inline-flex items-center gap-3 rounded-2xl bg-blue-600 px-6 py-4 text-sm font-semibold transition hover:bg-blue-700"
+            >
+              <i class="fa-solid fa-file-pdf text-lg"></i>
+              Download Resume
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- End Download Resume Section -->
+
+      <!-- ======================================================
+                              Contact Section
+      ======================================================= -->
+      <section id="contact" class="border-t border-white/10 px-6 py-24">
+        <div class="mx-auto max-w-4xl text-center">
+          <span
+            class="text-sm font-medium uppercase tracking-[0.3em] text-blue-400"
+            >Contact</span
+          >
+          <h2
+            class="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl"
+          >
+            Let's Build Something Professional
+          </h2>
+          <p class="mx-auto mt-6 max-w-2xl leading-relaxed text-slate-400">
+            Have a project idea, business system, or website in mind? I can help
+            turn it into a clean, responsive, and functional web solution.
+          </p>
+
+          <div class="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
+            <button
+              type="button"
+              id="contact-form-toggle"
+              class="rounded-2xl bg-blue-600 px-8 py-4 font-medium transition hover:bg-blue-700"
+            >
+              Send Message
+            </button>
+            <a
+              href="#projects"
+              class="rounded-2xl border border-white/10 px-8 py-4 font-medium text-slate-300 transition hover:bg-white/10 hover:text-white"
+              >View Projects</a
+            >
+          </div>
+
+          <div
+            id="contact-modal"
+            class="fixed inset-0 z-40 hidden items-center justify-center bg-black/50 px-6 py-6"
+            aria-hidden="true"
+          >
+            <div id="contact-modal-overlay" class="absolute inset-0"></div>
+            <div
+              class="relative w-full max-w-md rounded-3xl border border-white/10 bg-slate-900 p-8 text-left shadow-2xl"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="contact-modal-title"
+              aria-describedby="contact-modal-description"
+              tabindex="-1"
+            >
+              <div class="flex items-center justify-between">
+                <div>
+                  <h3
+                    id="contact-modal-title"
+                    class="text-2xl font-bold text-left"
+                  >
+                    Send me a message
+                  </h3>
+                  <p id="contact-modal-description" class="sr-only">
+                    Use this form to send a message about your project or
+                    business needs.
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  id="contact-form-close"
+                  class="text-2xl text-slate-400 transition hover:text-white"
+                  aria-label="Close contact form"
+                >
+                  ×
+                </button>
+              </div>
+              <form
+                id="contact-form"
+                class="mt-6 flex flex-col gap-4 text-left"
+              >
+                <div>
+                  <label
+                    for="name"
+                    class="block text-sm font-medium text-slate-300"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    class="mt-2 w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-slate-500 transition focus:border-blue-500 focus:bg-white/10 focus:outline-none"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-slate-300"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="mt-2 w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-slate-500 transition focus:border-blue-500 focus:bg-white/10 focus:outline-none"
+                    placeholder="your@email.com"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="subject"
+                    class="block text-sm font-medium text-slate-300"
+                    >Subject</label
+                  >
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    required
+                    class="mt-2 w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-slate-500 transition focus:border-blue-500 focus:bg-white/10 focus:outline-none"
+                    placeholder="Project inquiry..."
+                  />
+                </div>
+                <div>
+                  <label
+                    for="message"
+                    class="block text-sm font-medium text-slate-300"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    required
+                    rows="5"
+                    class="mt-2 w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-slate-500 transition focus:border-blue-500 focus:bg-white/10 focus:outline-none"
+                    placeholder="Tell me about your project..."
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="rounded-2xl bg-blue-600 px-4 py-3 font-medium transition hover:bg-blue-700"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="mt-12 flex flex-wrap justify-center gap-6">
+            <a
+              href="https://github.com/francojuan27"
+              target="_blank"
+              rel="noreferrer"
+              class="social-icon"
+              aria-label="GitHub profile"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://web.facebook.com/frank.john.735"
+              target="_blank"
+              rel="noreferrer"
+              class="social-icon"
+              aria-label="Facebook profile"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noreferrer"
+              class="social-icon"
+              aria-label="LinkedIn profile"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=francoiniegosystem@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              class="social-icon social-icon-accent"
+              aria-label="Send Gmail message"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+
+      <!-- ======================================================
+                              Footer Section
+      ======================================================= -->
+      <footer class="border-t border-white/10 px-6 py-8">
+        <div
+          class="mx-auto flex flex-col items-center justify-between gap-4 max-w-6xl md:flex-row"
+        >
+          <p class="text-sm text-slate-400">
+            © 2026 Franco Iniego. All rights reserved.
+          </p>
+          <div
+            class="flex flex-wrap items-center justify-center gap-6 text-sm text-slate-400"
+          >
+            <a href="#home" class="transition hover:text-white">Home</a>
+            <a href="#about" class="transition hover:text-white">About</a>
+            <a href="#projects" class="transition hover:text-white">Projects</a>
+            <a href="#contact" class="transition hover:text-white">Contact</a>
+          </div>
+          <div class="flex items-center gap-4 text-slate-400">
+            <a
+              href="https://github.com/francojuan27"
+              target="_blank"
+              rel="noreferrer"
+              class="transition hover:text-white"
+              aria-label="GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://web.facebook.com/frank.john.735"
+              target="_blank"
+              rel="noreferrer"
+              class="transition hover:text-white"
+              aria-label="Facebook"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noreferrer"
+              class="transition hover:text-white"
+              aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=francoiniegosystem@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              class="transition hover:text-white"
+              aria-label="Gmail"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer Section -->
+    </main>
+
     <button
       id="back-to-top"
       class="fixed bottom-6 right-6 hidden rounded-full bg-blue-600 px-4 py-3 text-white shadow-2xl transition hover:bg-blue-700"
+      aria-label="Back to top"
     >
-      ↑
+      <i class="fa-solid fa-arrow-up"></i>
     </button>
+
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
